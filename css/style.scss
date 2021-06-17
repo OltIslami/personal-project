@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf9f9;
+}
+
+.bottom-logo{
+    display: none;
+} 
+
+
+nav{
+    height: 60px;
+    background-color:#faf9f9;
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "logo menu";
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 10px 9px  #cacaca;
+
+    .p-logo{
+        grid-area: logo;
+        height: 55px;
+        width: auto;
+    }
+
+    .n-bar{
+        grid-area: menu;
+        list-style: none;
+        justify-self: end;
+
+        li{
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        a{
+            text-decoration: none;
+            color:#BEBEBE;
+
+            &:hover {
+                color: #696969;
+                text-shadow: 0 0 3px #FF0000, 0 0 5px #FF0000;
+              }
+        }
+    }
+}
+
+
+.home {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content:  space-around;
+    border-bottom: 2px solid #f3f1f1;
+    
+    
+
+    img, .text-home{
+        width: 40%;
+    }
+
+    img{
+        margin-bottom: 5px;
+    }
+
+    h2{
+        margin-bottom: 3px;
+    }
+}
+
+
+
+.about {
+
+    margin-bottom: 30px;
+    display: flex;
+    justify-content:  space-around;
+    border-bottom: 2px solid #f3f1f1;
+    
+
+    img, .text-about{
+        width: 40%;
+    }
+
+    img{
+        margin-bottom: 5px;
+    }
+
+    h2{
+        margin-bottom: 3px;
+    }
+}
+
+
+
+.services {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content:  space-around;
+    border-bottom: 2px solid #f3f1f1;
+    
+
+    img, .text-services{
+        width: 40%;
+    }
+
+    img{
+        margin-bottom: 5px;
+    }
+
+    h2{
+        margin-bottom: 3px;
+    }
+}
+
+
+
+.portfolio {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content:  space-around;
+    border-bottom: 2px solid #f3f1f1;
+    
+
+    img, .text-portfolio{
+        width: 40%;
+    }
+
+    img{
+        margin-bottom: 5px;
+    }
+
+    h2{
+        margin-bottom: 3px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+
+    .p-logo{
+        display: none;
+    }
+    
+    .bottom-logo{
+        display: block;
+        width: 20%;
+        margin-left:40% ;
+    }
+    
+    nav{
+        grid-template-rows: 1fr;
+        grid-template-columns: 0fr 5fr;
+        grid-template-areas: "logo menu";
+    }
+
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        img, .text-home{
+            width: 98%;
+            margin-left: 1%;
+        }
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        img, .text-about{
+            width: 98%;
+            margin-left: 1%;
+        }
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        img, .text-services{
+            width: 98%;
+            margin-left: 1%;
+        }
+    }
+
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        img, .text-portfolio{
+            width: 98%;
+            margin-left: 1%;
+        }
+    }
+}
+
+
+
+
+.Contact{
+        height:350px;
+        width: 100%;
+        background-color:#202020 ;
+        text-align: center;
+        color: #fff;
+
+        img{
+            width: 200px;
+        }
+
+
+        h2{
+            margin-bottom: 30px;
+        }
+
+        a{
+            text-decoration:none;
+            color: #fff;
+            &:hover{
+                color: deepskyblue;
+            }
+        }
+
+        
+        
+        p{
+            width: 25%;
+            margin-left: 37.5%;
+        }
+        
+}

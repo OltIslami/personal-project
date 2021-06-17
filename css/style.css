@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #faf9f9;
+}
+
+.bottom-logo {
+  display: none;
+}
+
+nav {
+  height: 60px;
+  background-color: #faf9f9;
+  display: -ms-grid;
+  display: grid;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+      grid-template-areas: "logo menu";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  -webkit-box-shadow: 0px 10px 9px  #cacaca;
+          box-shadow: 0px 10px 9px  #cacaca;
+}
+
+nav .p-logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  height: 55px;
+  width: auto;
+}
+
+nav .n-bar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: menu;
+  list-style: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+nav .n-bar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav .n-bar a {
+  text-decoration: none;
+  color: #BEBEBE;
+}
+
+nav .n-bar a:hover {
+  color: #696969;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #FF0000;
+}
+
+.home {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 2px solid #f3f1f1;
+}
+
+.home img, .home .text-home {
+  width: 40%;
+}
+
+.home img {
+  margin-bottom: 5px;
+}
+
+.home h2 {
+  margin-bottom: 3px;
+}
+
+.about {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 2px solid #f3f1f1;
+}
+
+.about img, .about .text-about {
+  width: 40%;
+}
+
+.about img {
+  margin-bottom: 5px;
+}
+
+.about h2 {
+  margin-bottom: 3px;
+}
+
+.services {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 2px solid #f3f1f1;
+}
+
+.services img, .services .text-services {
+  width: 40%;
+}
+
+.services img {
+  margin-bottom: 5px;
+}
+
+.services h2 {
+  margin-bottom: 3px;
+}
+
+.portfolio {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 2px solid #f3f1f1;
+}
+
+.portfolio img, .portfolio .text-portfolio {
+  width: 40%;
+}
+
+.portfolio img {
+  margin-bottom: 5px;
+}
+
+.portfolio h2 {
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .p-logo {
+    display: none;
+  }
+  .bottom-logo {
+    display: block;
+    width: 20%;
+    margin-left: 40%;
+  }
+  nav {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 0fr 5fr;
+        grid-template-columns: 0fr 5fr;
+        grid-template-areas: "logo menu";
+  }
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home img, .home .text-home {
+    width: 98%;
+    margin-left: 1%;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about img, .about .text-about {
+    width: 98%;
+    margin-left: 1%;
+  }
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services img, .services .text-services {
+    width: 98%;
+    margin-left: 1%;
+  }
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio img, .portfolio .text-portfolio {
+    width: 98%;
+    margin-left: 1%;
+  }
+}
+
+.Contact {
+  height: 350px;
+  width: 100%;
+  background-color: #202020;
+  text-align: center;
+  color: #fff;
+}
+
+.Contact img {
+  width: 200px;
+}
+
+.Contact h2 {
+  margin-bottom: 30px;
+}
+
+.Contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Contact a:hover {
+  color: deepskyblue;
+}
+
+.Contact p {
+  width: 25%;
+  margin-left: 37.5%;
+}
+/*# sourceMappingURL=style.css.map */
